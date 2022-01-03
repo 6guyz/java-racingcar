@@ -1,7 +1,12 @@
 package racingcar;
 
+import java.util.Scanner;
+
 public class Application {
+    static final Scanner scanner = new Scanner(System.in);
+    static final CarRacing carRacing = CarRacing.getInstance(scanner);
+
     public static void main(String[] args) {
-        // TODO 구현 진행
+        carRacing.play();
     }
 }
